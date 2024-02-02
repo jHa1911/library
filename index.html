@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="name">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="external.js" defer></script>
     <title>Library</title>
 </head>
 <body>
-    <div id="books">
-
+    <div class="header">
+        <h1>Library</h1>
+        <img id="logo" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Open_book_01.svg/1200px-Open_book_01.svg.png">
     </div>
+
+    
+
+    <button id="openDialog">Add Books</button>
+
     <dialog id="addbooks">
         <form id="addBookForm">
             <div class="user_input">
@@ -31,15 +38,21 @@
             </div>
             <div class="user_input">
                 <label for="read">Read</label>
-                <input type="checkbox" name="read" id="read">
+                <select id="read" name="read" required>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
             </div>
 
             <div class="user_input">
                 <button type="submit" id="submit">Submit</button>
             </div>
         </form>
-
     </dialog>
-    <button id="openDialog">Add Books</button>
+
+    <div id="books">
+
+    </div>
+    
 </body>
 </html>
