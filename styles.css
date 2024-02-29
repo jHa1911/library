@@ -15,6 +15,21 @@ body {
     
 }
 
+#openDialog {
+    margin-left: auto;
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    line-height: normal;
+    height: 38px;
+    width: 97%;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
 #addbooks {
     background-color: rgb(145, 135, 121);
     padding-left: 20px;
